@@ -57,7 +57,7 @@
 </head>
 
 
-<body :class="{ 'overflow-hidden max-h-screen': mobileMenu }" class="relative" x-data="{ mobileMenu: false }">
+<body oncontextmenu="return false" :class="{ 'overflow-hidden max-h-screen': mobileMenu }" class="relative" x-data="{ mobileMenu: false }">
 
   <div id="main" class="relative">
     <div x-data="{
