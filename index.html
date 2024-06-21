@@ -60,7 +60,7 @@
 <main>
 
   <body oncontextmenu="return false" :class="{ 'overflow-hidden max-h-screen': mobileMenu }" class="relative"
-    x-data="{ mobileMenu: false }">
+    x-data="{ mobileMenu: false }" >
 
     <div id="main" class="relative">
       <div x-data="{
@@ -84,7 +84,7 @@
 
                 <li class="group pl-6">
 
-                  <span  id="nav-li"  @click="triggerNavItem('#about')"
+                  <span  id="nav-li"  @click="triggerNavItem('#')"
                     class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white">About</span>
 
                   <span class="block h-0.5 w-full bg-transparent group-hover:bg-yellow"></span>
@@ -92,7 +92,7 @@
 
                 <li class="group pl-6">
 
-                  <span id="nav-li"  @click="triggerNavItem('#services')"
+                  <span id="nav-li"  @click="triggerNavItem('#')"
                     class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white">Services</span>
 
                   <span class="block h-0.5 w-full bg-transparent group-hover:bg-yellow"></span>
@@ -100,7 +100,7 @@
 
                 <li class="group pl-6">
 
-                  <span id="nav-li" @click="triggerNavItem('#portfolio')"
+                  <span id="nav-li" @click="triggerNavItem('#')"
                     class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white">Portfolio</span>
 
                   <span class="block h-0.5 w-full bg-transparent group-hover:bg-yellow"></span>
@@ -108,7 +108,7 @@
 
                 <li class="group pl-6">
 
-                  <span id="nav-li"  @click="triggerNavItem('#blog')"
+                  <span id="nav-li"  @click="triggerNavItem('#')"
                     class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white">Blog</span>
 
                   <span class="block h-0.5 w-full bg-transparent group-hover:bg-yellow"></span>
@@ -116,7 +116,7 @@
 
                 <li class="group pl-6">
 
-                  <span id="nav-li" @click="triggerNavItem('#contact')"
+                  <span id="nav-li" @click="triggerNavItem('#')"
                     class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white">Contact</span>
 
                   <span class="block h-0.5 w-full bg-transparent group-hover:bg-yellow"></span>
@@ -144,35 +144,35 @@
 
               <li class="py-2">
 
-                <span @click="triggerMobileNavItem('#about')"
+                <span @click="triggerMobileNavItem('/')"
                   class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white">About</span>
 
               </li>
 
               <li class="py-2">
 
-                <span @click="triggerMobileNavItem('#services')"
+                <span @click="triggerMobileNavItem('/')"
                   class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white">Services</span>
 
               </li>
 
               <li class="py-2">
 
-                <span @click="triggerMobileNavItem('#portfolio')"
+                <span @click="triggerMobileNavItem('/')"
                   class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white">Portfolio</span>
 
               </li>
 
               <li class="py-2">
 
-                <span @click="triggerMobileNavItem('#blog')"
+                <span @click="triggerMobileNavItem('/')"
                   class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white">Blog</span>
 
               </li>
 
               <li class="py-2">
 
-                <span @click="triggerMobileNavItem('#contact')"
+                <span @click="triggerMobileNavItem('/')"
                   class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white">Contact</span>
 
               </li>
@@ -460,23 +460,22 @@
                   My latest clients
                 </h2>
                 <div class="flex flex-wrap items-center justify-center pt-4 sm:pt-4">
-                  <!-- <span class="m-8 block">
-                  <img src="./assets/img/amazon.png" alt="client logo" class="mx-auto block h-20000 w-20000" />
-                </span> -->
-                  <span class="m-8 block">
-                    <img src="./assets/img/apple-logo.png" alt="client logo" class="mx-auto block h-13 w-auto" />
-                  </span>
-                  <span class="m-8 block">
-                    <img src="./assets/img/google.webp" alt="client logo" class="mx-auto block h-13 w-auto" />
-                  </span>
-                  <span class="m-8 block">
-                    <img src="./assets/img/buy me a coffee.avif" alt="client logo" class="mx-auto block h-13 w-200" />
-                  </span>
-
-                  <span class="m-8 block">
-                    <img src="./assets/img/netflix.jpg" alt="client logo" class="mx-auto block h-13 w-2000 w-auto" />
-                  </span>
-                </div>
+                  <div class="m-8">
+                    <img src="./assets/img/apple-logo.png" alt="Apple logo" class="mx-auto max-h-40 sm:max-h-48" />
+                  </div>
+                
+                  <div class="m-8">
+                    <img src="./assets/img/google.webp" alt="Google logo"class="mx-auto max-h-40 sm:max-h-48" />
+                  </div>
+                
+                  <div class="m-8">
+                    <img src="./assets/img/buy me a coffee.avif" alt="Buy me a coffee" class="mx-auto max-h-40 sm:max-h-48" />
+                  </div>
+                
+                  <div class="m-8">
+                    <img src="./assets/img/netflix.jpg" alt="Netflix logo" class="mx-auto max-h-40 sm:max-h-48" />
+                  </div>
+                </div>                
               </div>
             </div>
           </div>
